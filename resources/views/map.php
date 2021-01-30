@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Heatmaps</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
@@ -8,19 +8,9 @@
       defer
     ></script>
     <link rel="stylesheet" type="text/css" href= <?php echo asset('css/map.css')?> />
-    <script></script>
-    <script>
-        function getPoints() {
-            return [
-                @foreach ($locations as $location)
-                    new google.maps.LatLng( {{$location[0]}}, {{$location[1]}}),
-                @endforeach
-            ];
-        }
-    </script>
     <script src=<?php echo asset('js/map.js')?>></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="floating-panel">
       <button onclick="toggleHeatmap()">Toggle Heatmap</button>
       <button onclick="changeGradient()">Change gradient</button>
@@ -28,6 +18,5 @@
       <button onclick="changeOpacity()">Change opacity</button>
     </div>
     <div id="map"></div>
-
-</body>
+  </body>
 </html>
