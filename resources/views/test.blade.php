@@ -85,7 +85,7 @@
       <div class="col-md-12 page-block">
         <h1>General information about</h1>
         <h3>For the next questions try to answer honestly and with the most suitable opcions according to your actual state. This information will help us to give you the best recomendations</h3>
-        <form action="/results"> <!--cambiar-->
+        <form action="results" method="POST"> <!--cambiar-->
           <h5>Question 1</h5>
           <input type="checkbox" id="respuesta11" name="respuesta11" value="r11">
           <label for="respuesta11"> r1</label><br>

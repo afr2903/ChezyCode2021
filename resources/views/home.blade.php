@@ -55,7 +55,7 @@
       <!--nav icon end-->
       
       <ul id="nav-top" class="nav navbar-nav navbar-right">
-        <li><a href="/home" class="page-scroll">Home</a></li>
+        <li><a href="/" class="page-scroll">Home</a></li>
         <li><a href="/test" class="page-scroll">Test</a></li>
         <li><a href="/map" class="page-scroll">Map</a></li>
         <li><a href="contact.html" class="page-scroll">Recommendations</a></li>

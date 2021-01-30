@@ -8,8 +8,8 @@ use App\Models\User;
 
 class Control extends Controller{
     
-    public function welcome(){
-        return view('welcome');
+    public function home(){
+        return view('home');
     }
 
     public function test(){
@@ -18,6 +18,18 @@ class Control extends Controller{
 
     public function submit(){
         $_POST['id'];
+    }
+
+    public function blog(){
+        return view('blog');
+    }
+
+    public function results(){
+        return view('results');
+    }
+
+    public function certificate(){
+        return view('certificate');
     }
 
     public function map(){
