@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Control;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Control::class, 'welcome'] );
 
-Route::get('map', function () {
-    return view('map');
-});
+Route::get('test', [Control::class, 'test'] );
+
+Route::post('submit', [Control::class, 'submit'] );
+
+Route::get('map', [Control::class, 'map'] );
