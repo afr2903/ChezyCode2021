@@ -84,28 +84,27 @@
       <!--blog posts container-->
       <div class="col-md-offset-3 col-md-6 page-block">
         <h1>Commit yourself</h1>
-            <form style="padding-bottom:80px">
-                <div class="form-group">
+            <form method="post" action="form_1.php" name="Certificate" style="padding-bottom:80px">
+                <div class="form-group">                    
                     <label for="exampleInputName">Name</label>
-                    <input type="email" class="form-control" id="exampleInputName" placeholder="Name">
+                    <input id="Name" name="Name" type="text" class="form-control" placeholder="Name">
+                    <!--<input type="email" class="form-control" id="exampleInputName" placeholder="Name">-->
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input id="Email" name="Email" type="text" class="form-control" placeholder="Email">
+                    <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">-->
                 </div>
-                <!--<div class="form-group">
-                    <label for="exampleInputPassword1">Comentaries about</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="x">
-                </div>-->
                 <div class="form-group">
                     <label for="exampleInputMessage">Comentaries about</label>
-                    <textarea placeholder="Tell us something"></textarea>
+                    <input id="Comment" name="Comment" type="text" class="form-control" placeholder="Comment">
+                    <!--<textarea placeholder="Tell us something"></textarea>-->
                 </div>
-                <div class="checkbox checkbox-success">
+                <!--<div class="checkbox checkbox-success">
                     <input type="checkbox" value="yes" checked="">
                     <label> Send me a copy. </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Get the compromise</button>
+                </div>-->
+                <button type="submit" class="btn btn-primary">Get the certificate</button>
         </form>
 
       <!--blog posts container-->
