@@ -19,37 +19,38 @@ class Control extends Controller{
 
     public function submit(){
         $sum = 0;
-        $flag2 = 0;
-        for ($i = 1; $i<10; $i+=2)
-        {
-            $flag1 = 0;
-            for ($j = 1; $j<5; $j++)
-            {
-                if (!empty($_POST['respuesta'.$i.$j])) 
-                {
-                    $sum+=$_POST['respuesta'.$i.$j];
-                    $flag1++;
-                }
-            }
-            if ($flag1==0)
-            {
-                echo '<script> alert("Please answer all the questions"); </script>';
-                echo '<script> window.history.back();</script>';
-                $flag2 = 1;
-                break;
+ 
+        $flag1 = 0;
+        for ($j = 1; $j<=12; $j++){
+            if (!empty($_POST['respuesta6'.$j])) {
+                $sum+=$_POST['respuesta6'.$j];
+                $flag1++;
             }
         }
-        if (empty($_POST['pregunta2']) || empty($_POST['pregunta4']) || empty($_POST['pregunta6']) || empty($_POST['pregunta8']) || empty($_POST['pregunta10']))
-        {
+        if ($flag1==0 || $_POST['pregunta1']==NULL || $_POST['pregunta2']==NULL || $_POST['pregunta3']==NULL || $_POST['pregunta4']==NULL || $_POST['pregunta5']==NULL){
             echo '<script> alert("Please answer all the questions"); </script>';
             echo '<script> window.history.back();</script>';
         }
-        $sum+= $_POST['pregunta2'] + $_POST['pregunta4'] + $_POST['pregunta6'] + $_POST['pregunta8'] + $_POST['pregunta10'];
-        echo $sum;
-        if ($flag2==0)
-        {
-            return redirect('results')->with('sum', $sum);
-        }
+
+        $sum+= $_POST['pregunta1'] + $_POST['pregunta2'] + $_POST['pregunta3'] + $_POST['pregunta4'] + $_POST['pregunta5'];
+        //echo $sum;
+
+        $ip = file_get_contents('http://v4v6.ipv6-test.com/api/myip.php');
+        $status = ($sum>70? 1: 0);
+
+        DB::table('testresults')->insert([
+            'ip' => $ip,
+            'latitude' => file_get_contents('https://ipapi.co/'.$ip.'/latitude'),
+            'longitude' => file_get_contents('https://ipapi.co/'.$ip.'/longitude'),
+            'points' => $sum,
+            'status' => $status
+        ]);
+
+        if($sum<=50) $message = "Vas bien";
+        else if($sum<=100) $message = "Vete a tu casa";
+        else $message = "Vete alv";
+
+        return redirect('results')->with('message', $message);
     }
 
     public function blog(){
@@ -65,11 +66,10 @@ class Control extends Controller{
     }
 
     public function map(){
-        $puntos = DB::select('select ip from testresults');
+        $points = DB::select('select ip from testresults');
         $locations = array();
-        foreach ($puntos as $punto){
-            $ip = file_get_contents('http://v4v6.ipv6-test.com/api/myip.php');
-            $latlong = file_get_contents('https://ipapi.co/'.$punto->ip.'/latlong');
+        foreach ($points as $point){
+            $latlong = file_get_contents('https://ipapi.co/'.$point->ip.'/latlong');
             //echo $latlong;
             $location = explode(",", $latlong);
             array_push($locations, $location);

@@ -84,16 +84,15 @@
       <!--blog posts container-->
       <div class="col-md-offset-3 col-md-6 page-block">
         <h1>Commit yourself</h1>
-            <form method="post" action="/release.blade.php" name="Certificate" style="padding-bottom:80px">
-            <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
+            <form method="post" action="form_1.php" name="Certificate" style="padding-bottom:80px">
                 <div class="form-group">                    
                     <label for="exampleInputName">Name</label>
-                    <input id="name" name="name" type="text" class="form-control" placeholder="Name">
+                    <input id="Name" name="Name" type="text" class="form-control" placeholder="Name">
                     <!--<input type="email" class="form-control" id="exampleInputName" placeholder="Name">-->
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input id="email" name="email" type="text" class="form-control" placeholder="Email">
+                    <input id="Email" name="Email" type="text" class="form-control" placeholder="Email">
                     <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">-->
                 </div>
                 <div class="form-group">
@@ -105,8 +104,7 @@
                     <input type="checkbox" value="yes" checked="">
                     <label> Send me a copy. </label>
                 </div>-->
-                <a href="/image_of_certificate"><button type="submit" class="btn btn-primary">Get the certificate</a>
-                <!--<button type="submit" class="btn btn-primary">Get the certificate</button>-->
+                <button type="submit" class="btn btn-primary">Get the certificate</button>
         </form>
 
       <!--blog posts container-->

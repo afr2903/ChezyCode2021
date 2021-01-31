@@ -80,9 +80,10 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12 wow fadeInDown">
-          <div class="c-block"><i class="fa fa-heart-o"></i><span class="counter">35</span>
+          <!--<div class="c-block"><i class="fa fa-heart-o"></i><span class="counter">35</span>
             <p>Probability</p>
-          </div>
+          </div>-->
+          <div class="c-block"><h1 style="color:white">{{Session::get('message')}}</h1></div>
       </div>
     </div>
   </div>

@@ -85,68 +85,69 @@
       <div class="col-md-12 page-block">
         <h1>General information about</h1>
         <h3>For the next questions try to answer HONESTY and with the most suitable opcions according to your actual state. This information will help us to give you the best Recommendations</h3>
-        <form action="/results"> <!--cambiar-->
+        <form action="submit" method="post"> <!--cambiar-->
+          <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
           <h5>How old are you? </h5>
-          <input type="radio" id="respuesta11" name="pregunta1" value="respuesta11">
+          <input type="radio" id="respuesta11" name="pregunta1" value="5">
           <label for="respuesta11">Under 18</label><br>
-          <input type="radio" id="respuesta12" name="pregunta1" value="respuesta12">
+          <input type="radio" id="respuesta12" name="pregunta1" value="10">
           <label for="respuesta12">18 - 29 </label><br>
-          <input type="radio" id="respuesta13" name="pregunta1" value="respuesta13">
+          <input type="radio" id="respuesta13" name="pregunta1" value="15">
           <label for="respuesta13">30 - 64</label><br>
-          <input type="radio" id="respuesta14" name="pregunta1" value="respuesta14">
+          <input type="radio" id="respuesta14" name="pregunta1" value="20">
           <label for="respuesta14">65 or older</label><br>
 
           <h5>Do you suffer from a chronic disease, such as hypertension, diabetes, asthma, immunodeficiency, obesity/overweight, or anything related?</h5>
-          <input type="radio" id="respuesta21" name="pregunta2" value="respuesta21">
+          <input type="radio" id="respuesta21" name="pregunta2" value="10">
           <label for="respuesta21">Yes</label><br>
-          <input type="radio" id="respuesta22" name="pregunta2" value="respuesta22">
+          <input type="radio" id="respuesta22" name="pregunta2" value="0">
           <label for="respuesta22">No</label><br>
 
           <h5>Have you had contact with people or groups of people without the proper hygiene measures (face masks, physical distancing, and the like)?</h5>
-          <input type="radio" id="respuesta32" name="pregunta3" value="respuesta31">
+          <input type="radio" id="respuesta32" name="pregunta3" value="50">
           <label for="respuesta31">Yes</label><br>
-          <input type="radio" id="respuesta31" name="pregunta3" value="respuesta32">
+          <input type="radio" id="respuesta31" name="pregunta3" value="0">
           <label for="respuesta32">No</label><br>
 
           <h5>Have you interacted with people who have recently travelled?</h5>
-          <input type="radio" id="respuesta41" name="pregunta4" value="respuesta41">
+          <input type="radio" id="respuesta41" name="pregunta4" value="10">
           <label for="respuesta41">Yes</label><br>
-          <input type="radio" id="respuesta42" name="pregunta4" value="respuesta42">
+          <input type="radio" id="respuesta42" name="pregunta4" value="0">
           <label for="respuesta42">No</label><br>
 
           <h5>Have you spent time in a group setting (for example public event, school, concert, airport, public transport, or gym) over the last two weeks?</h5>
-          <input type="radio" id="respuesta51" name="pregunta5" value="respuesta51">
+          <input type="radio" id="respuesta51" name="pregunta5" value="40">
           <label for="respuesta51">Yes</label><br>
-          <input type="radio" id="respuesta52" name="pregunta5" value="respuesta52">
+          <input type="radio" id="respuesta52" name="pregunta5" value="0">
           <label for="respuesta52">No</label><br>
 
           <h5>Question 6: In the last two weeks, which of the following symptoms have you had?</h5>
-          <input type="checkbox" id="respuesta61" name="respuesta61" value="r61">
+          <input type="checkbox" id="respuesta61" name="respuesta61" value="5">
           <label for="respuesta61">Fever or chills</label><br>
-          <input type="checkbox" id="respuesta62" name="respuesta62" value="r62">
+          <input type="checkbox" id="respuesta62" name="respuesta62" value="5">
           <label for="respuesta62">Cough</label><br>
-          <input type="checkbox" id="respuesta63" name="respuesta63" value="r63">
+          <input type="checkbox" id="respuesta63" name="respuesta63" value="3">
           <label for="respuesta63">Difficulty breathing</label><br>
-          <input type="checkbox" id="respuesta64" name="respuesta64" value="r64">
+          <input type="checkbox" id="respuesta64" name="respuesta64" value="3">
           <label for="respuesta64">Fatigue</label><br>
-          <input type="checkbox" id="respuesta65" name="respuesta65" value="r65">
+          <input type="checkbox" id="respuesta65" name="respuesta65" value="3">
           <label for="respuesta65">Headache</label><br>
-          <input type="checkbox" id="respuesta66" name="respuesta66" value="r66">
+          <input type="checkbox" id="respuesta66" name="respuesta66" value="4">
           <label for="respuesta66">Loss of taste or smell</label><br>
-          <input type="checkbox" id="respuesta67" name="respuesta67" value="r67">
+          <input type="checkbox" id="respuesta67" name="respuesta67" value="3">
           <label for="respuesta67">Body aches</label><br>
-          <input type="checkbox" id="respuesta68" name="respuesta68" value="r68">
+          <input type="checkbox" id="respuesta68" name="respuesta68" value="3">
           <label for="respuesta68">Sore throat</label><br>
-          <input type="checkbox" id="respuesta69" name="respuesta69" value="r69">
+          <input type="checkbox" id="respuesta69" name="respuesta69" value="2">
           <label for="respuesta69">Runny nose</label><br> 
-          <input type="checkbox" id="respuesta610" name="respuesta610" value="r610">
+          <input type="checkbox" id="respuesta610" name="respuesta610" value="1">
           <label for="respuesta610">Nausea or vomiting</label><br>
-          <input type="checkbox" id="respuesta611" name="respuesta611" value="r611">
+          <input type="checkbox" id="respuesta611" name="respuesta611" value="2">
           <label for="respuesta611">Diarrhea</label><br>
-          <input type="checkbox" id="respuesta612" name="respuesta612" value="r612">
-          <label for="respuesta612">Pain or pressure in the chest</label><br>
+          <input type="checkbox" id="respuesta612" name="respuesta612" value="0">
+          <label for="respuesta612">None of the above</label><br>
           <p>Thank you for your answers!</p><br><br> 
-          <a href="/results"><button type="submit" class="btn btn-primary">Submit</a>
+          <button type="submit" class="btn btn-primary">Submit
         </form>
       </div>
       <!--blog posts container-->
