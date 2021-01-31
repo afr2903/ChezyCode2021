@@ -66,15 +66,14 @@ class Control extends Controller{
     }
 
     public function map(){
-        $points = DB::select('select ip from testresults');
+        $points = DB::select('select latitude,longitude from testresults');
         $locations = array();
         foreach ($points as $point){
-            $latlong = file_get_contents('https://ipapi.co/'.$point->ip.'/latlong');
-            //echo $latlong;
-            $location = explode(",", $latlong);
+            $location = [
+                "latitude" => $point->latitude, 
+                "longitude" => $point->longitude
+            ];
             array_push($locations, $location);
-            //echo "Latitude: ".$location[0]." Longitude: ".$location[1];
-            sleep (.5);    
         }
         return view('map')->with('locations',$locations);
     }
