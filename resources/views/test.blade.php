@@ -163,8 +163,14 @@
           <input type="checkbox" id="respuesta612" name="respuesta612" value="0">
           <label for="respuesta612">None of the above</label><br><br>
           <p>Thank you for your answers!</p><br><br> 
-          <button type="submit" class="btn btn-primary">Submit
+          
+          <input type="hidden" id="latitude" name="latitude" value="">
+          <input type="hidden" id="longitude" name="longitude" value="">
+
+          <button type="submit">Submit</button>
         </form>
+
+      <button onclick="getLocation()" class="btn btn-primary">Put me on the map</button>
       </div>
       <!--blog posts container-->
       <div class="clearfix"></div>
@@ -215,6 +221,24 @@
         });
     });
 </script> 
+<script>
+  var x = document.getElementById("latitude");
+  var y = document.getElementById("longitude");
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      alert("Geolocation is not supported by this browser.");
+    }
+  }
+
+  function showPosition(position) {
+    x.value = position.coords.latitude;
+    y.value = position.coords.longitude;
+    alert("Done! you are in the map, please submit your results");
+  }
+</script>
 <script>
 new WOW().init();
 </script>

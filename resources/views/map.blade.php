@@ -42,7 +42,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="/"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
+          <a class="navbar-brand" href="/home"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -52,9 +52,10 @@
           <!--nav icon end-->
           
           <ul id="nav-top" class="nav navbar-nav navbar-right">
-            <li><a href="/" class="page-scroll">Home</a></li>
+            <li><a href="/home" class="page-scroll">Home</a></li>
            <li><a href="/test" class="page-scroll">Test</a></li>
            <li><a href="/map" class="page-scroll">Map</a></li>
+           <li><a href="contact.html" class="page-scroll">Recommendations</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> 
@@ -67,11 +68,12 @@
     <div id="page-banner" style="background-image: url(img/M2.png);">
       <div class="content  wow fdeInUp">
         <div class="container ">
-          <h1>Heatmap </h1>
+          <h1>Heat Map </h1>
+          <h3 style="color:white">This heat map helps us to scheme the geological distribution of the people who have taken our test, as well as their results. As you can see, people are getting more aware of the current situation of COVID-19 and how to take action against the spread of this disease.</h3>
         </div>
       </div>
     </div>
-    <title>Heatmap</title>
+    <title>Heatmaps</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGUqu0xbN4fcwCd09XqLjIwEOhRMjCYgE&callback=initMap&libraries=visualization&v=weekly"
@@ -128,16 +130,10 @@
             ];
         }
     </script>
-    <script src=<?php echo asset('js/map.js')?></script>
+    <script src=<?php echo asset('js/map.js')?>></script>
     
   </head>
   <body>
-       <div id="floating-panel">
-        <button onclick="toggleHeatmap()">Toggle Heatmap</button>
-        <button onclick="changeGradient()">Change gradient</button>
-        <button onclick="changeRadius()">Change radius</button>
-        <button onclick="changeOpacity()">Change opacity</button>
-        </div>
-        <div id="map"></div> 
+      <div id="map"></div> 
   </body>
 </html>
