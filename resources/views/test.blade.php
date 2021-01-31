@@ -84,110 +84,69 @@
       <!--blog posts container-->
       <div class="col-md-12 page-block">
         <h1>General information about</h1>
-        <h3>For the next questions try to answer honestly and with the most suitable opcions according to your actual state. This information will help us to give you the best recomendations</h3>
-        <form action="submit" method="POST"> <!--cambiar-->
-          <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
-          <h5>Question 1</h5>
-          <input type="checkbox" id="respuesta11" name="respuesta11" value="1">
-          <label for="respuesta11"> r1</label><br>
-          <input type="checkbox" id="respuesta12" name="respuesta12" value="2">
-          <label for="respuesta12"> r2</label><br>
-          <input type="checkbox" id="respuesta13" name="respuesta13" value="3">
-          <label for="respuesta13"> r3</label><br>
-          <input type="checkbox" id="respuesta14" name="respuesta14" value="4">
-          <label for="respuesta14"> r4</label><br>
+        <h3>For the next questions try to answer HONESTY and with the most suitable opcions according to your actual state. This information will help us to give you the best Recommendations</h3>
+        <form action="/results"> <!--cambiar-->
+          <h5>How old are you? </h5>
+          <input type="radio" id="respuesta11" name="pregunta1" value="respuesta11">
+          <label for="respuesta11">Under 18</label><br>
+          <input type="radio" id="respuesta12" name="pregunta1" value="respuesta12">
+          <label for="respuesta12">18 - 29 </label><br>
+          <input type="radio" id="respuesta13" name="pregunta1" value="respuesta13">
+          <label for="respuesta13">30 - 64</label><br>
+          <input type="radio" id="respuesta14" name="pregunta1" value="respuesta14">
+          <label for="respuesta14">65 or older</label><br>
 
-          <h5>Question 2</h5>
-          <input type="radio" id="respuesta21" name="pregunta2" value="1">
-          <label for="respuesta21">r1</label><br>
-          <input type="radio" id="respuesta22" name="pregunta2" value="2">
-          <label for="respuesta22">r2</label><br>
-          <input type="radio" id="respuesta23" name="pregunta2" value="3">
-          <label for="respuesta23">r3</label><br>
-          <input type="radio" id="respuesta24" name="pregunta2" value="4">
-          <label for="respuesta24">r4</label><br>
+          <h5>Do you suffer from a chronic disease, such as hypertension, diabetes, asthma, immunodeficiency, obesity/overweight, or anything related?</h5>
+          <input type="radio" id="respuesta21" name="pregunta2" value="respuesta21">
+          <label for="respuesta21">Yes</label><br>
+          <input type="radio" id="respuesta22" name="pregunta2" value="respuesta22">
+          <label for="respuesta22">No</label><br>
 
-          <h5>Question 3</h5>
-          <input type="checkbox" id="respuesta31" name="respuesta31" value="1">
-          <label for="respuesta31"> r1</label><br>
-          <input type="checkbox" id="respuesta32" name="respuesta32" value="2">
-          <label for="respuesta32"> r2</label><br>
-          <input type="checkbox" id="respuesta33" name="respuesta33" value="3">
-          <label for="respuesta33"> r3</label><br>
-          <input type="checkbox" id="respuesta34" name="respuesta34" value="4">
-          <label for="respuesta34"> r4</label><br>
+          <h5>Have you had contact with people or groups of people without the proper hygiene measures (face masks, physical distancing, and the like)?</h5>
+          <input type="radio" id="respuesta32" name="pregunta3" value="respuesta31">
+          <label for="respuesta31">Yes</label><br>
+          <input type="radio" id="respuesta31" name="pregunta3" value="respuesta32">
+          <label for="respuesta32">No</label><br>
 
-          <h5>Question 4</h5>
-          <input type="radio" id="respuesta41" name="pregunta4" value="1">
-          <label for="respuesta41">r1</label><br>
-          <input type="radio" id="respuesta42" name="pregunta4" value="2">
-          <label for="respuesta42">r2</label><br>
-          <input type="radio" id="respuesta43" name="pregunta4" value="3">
-          <label for="respuesta43">r3</label><br>
-          <input type="radio" id="respuesta44" name="pregunta4" value="4">
-          <label for="respuesta44">r4</label><br>
+          <h5>Have you interacted with people who have recently travelled?</h5>
+          <input type="radio" id="respuesta41" name="pregunta4" value="respuesta41">
+          <label for="respuesta41">Yes</label><br>
+          <input type="radio" id="respuesta42" name="pregunta4" value="respuesta42">
+          <label for="respuesta42">No</label><br>
 
-          <h5>Question 5</h5>
-          <input type="checkbox" id="respuesta51" name="respuesta51" value="1">
-          <label for="respuesta51"> r1</label><br>
-          <input type="checkbox" id="respuesta52" name="respuesta52" value="2">
-          <label for="respuesta52"> r2</label><br>
-          <input type="checkbox" id="respuesta53" name="respuesta53" value="3">
-          <label for="respuesta53"> r3</label><br>
-          <input type="checkbox" id="respuesta54" name="respuesta54" value="4">
-          <label for="respuesta54"> r4</label><br>
+          <h5>Have you spent time in a group setting (for example public event, school, concert, airport, public transport, or gym) over the last two weeks?</h5>
+          <input type="radio" id="respuesta51" name="pregunta5" value="respuesta51">
+          <label for="respuesta51">Yes</label><br>
+          <input type="radio" id="respuesta52" name="pregunta5" value="respuesta52">
+          <label for="respuesta52">No</label><br>
 
-          <h5>Question 6</h5>
-          <input type="radio" id="respuesta61" name="pregunta6" value="1">
-          <label for="respuesta61">r1</label><br>
-          <input type="radio" id="respuesta62" name="pregunta6" value="2">
-          <label for="respuesta62">r2</label><br>
-          <input type="radio" id="respuesta63" name="pregunta6" value="3">
-          <label for="respuesta63">r3</label><br>
-          <input type="radio" id="respuesta64" name="pregunta6" value="4">
-          <label for="respuesta64">r4</label><br>
-
-          <h5>Question 7</h5>
-          <input type="checkbox" id="respuesta71" name="respuesta71" value="1">
-          <label for="respuesta71"> r1</label><br>
-          <input type="checkbox" id="respuesta72" name="respuesta72" value="2">
-          <label for="respuesta72"> r2</label><br>
-          <input type="checkbox" id="respuesta73" name="respuesta73" value="3">
-          <label for="respuesta73"> r3</label><br>
-          <input type="checkbox" id="respuesta74" name="respuesta74" value="4">
-          <label for="respuesta74"> r4</label><br>
-
-          <h5>Question 8</h5>
-          <input type="radio" id="respuesta81" name="pregunta8" value="1">
-          <label for="respuesta81">r1</label><br>
-          <input type="radio" id="respuesta82" name="pregunta8" value="2">
-          <label for="respuesta82">r2</label><br>
-          <input type="radio" id="respuesta83" name="pregunta8" value="3">
-          <label for="respuesta83">r3</label><br>
-          <input type="radio" id="respuesta84" name="pregunta8" value="4">
-          <label for="respuesta84">r4</label><br>
-
-          <h5>Question 9</h5>
-          <input type="checkbox" id="respuesta91" name="respuesta91" value="1">
-          <label for="respuesta91"> r1</label><br>
-          <input type="checkbox" id="respuesta92" name="respuesta92" value="2">
-          <label for="respuesta92"> r2</label><br>
-          <input type="checkbox" id="respuesta93" name="respuesta93" value="3">
-          <label for="respuesta93"> r3</label><br>
-          <input type="checkbox" id="respuesta94" name="respuesta94" value="4">
-          <label for="respuesta94"> r4</label><br>
-
-          <h5>Question 10</h5>
-          <input type="radio" id="respuesta101" name="pregunta10" value="1">
-          <label for="respuesta101">r1</label><br>
-          <input type="radio" id="respuesta102" name="pregunta10" value="2">
-          <label for="respuesta102">r2</label><br>
-          <input type="radio" id="respuesta103" name="pregunta10" value="3">
-          <label for="respuesta103">r3</label><br>
-          <input type="radio" id="respuesta104" name="pregunta10" value="4">
-          <label for="respuesta104">r4</label><br><br>
-          <p>Thanks for answering</p>
-          <button type="submit" class="btn btn-primary">Submit
+          <h5>Question 6: In the last two weeks, which of the following symptoms have you had?</h5>
+          <input type="checkbox" id="respuesta61" name="respuesta61" value="r61">
+          <label for="respuesta61">Fever or chills</label><br>
+          <input type="checkbox" id="respuesta62" name="respuesta62" value="r62">
+          <label for="respuesta62">Cough</label><br>
+          <input type="checkbox" id="respuesta63" name="respuesta63" value="r63">
+          <label for="respuesta63">Difficulty breathing</label><br>
+          <input type="checkbox" id="respuesta64" name="respuesta64" value="r64">
+          <label for="respuesta64">Fatigue</label><br>
+          <input type="checkbox" id="respuesta65" name="respuesta65" value="r65">
+          <label for="respuesta65">Headache</label><br>
+          <input type="checkbox" id="respuesta66" name="respuesta66" value="r66">
+          <label for="respuesta66">Loss of taste or smell</label><br>
+          <input type="checkbox" id="respuesta67" name="respuesta67" value="r67">
+          <label for="respuesta67">Body aches</label><br>
+          <input type="checkbox" id="respuesta68" name="respuesta68" value="r68">
+          <label for="respuesta68">Sore throat</label><br>
+          <input type="checkbox" id="respuesta69" name="respuesta69" value="r69">
+          <label for="respuesta69">Runny nose</label><br> 
+          <input type="checkbox" id="respuesta610" name="respuesta610" value="r610">
+          <label for="respuesta610">Nausea or vomiting</label><br>
+          <input type="checkbox" id="respuesta611" name="respuesta611" value="r611">
+          <label for="respuesta611">Diarrhea</label><br>
+          <input type="checkbox" id="respuesta612" name="respuesta612" value="r612">
+          <label for="respuesta612">Pain or pressure in the chest</label><br>
+          <p>Thank you for your answers!</p><br><br> 
+          <a href="/results"><button type="submit" class="btn btn-primary">Submit</a>
         </form>
       </div>
       <!--blog posts container-->
