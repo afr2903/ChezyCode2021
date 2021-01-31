@@ -100,7 +100,7 @@ new WOW().init();
         <h3 class="meltdown">the current health situation and commited to take steps to prevent the spread of COVID-19</h3> 
         <h3>Lambot 3478 | FRC Team 2021</h3>
         <h5 class="col-xs-12 text-center date">Footnote: this certificate has neither legal nor medical value</h5>
-        <img src = "img/LamBot.png" height = 50% width = 50%> 
+        <img src = "img/LamBot.png" > 
         <div class="row"> 
           <div class="col-xs-12 text-center date"> 
             awarded<br/><span class="handwritten"><?php echo date("Y/m/d"); ?></span>
