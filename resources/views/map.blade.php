@@ -123,7 +123,7 @@
         function getPoints() {
             return [
                 @foreach ($locations as $location)
-                    new google.maps.LatLng( {{$location[0]}}, {{$location[1]}}),
+                    new google.maps.LatLng( {{$location['latitude']}}, {{$location['longitude']}}),
                 @endforeach
             ];
         }

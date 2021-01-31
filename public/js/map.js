@@ -2,9 +2,9 @@ let map, heatmap;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 20,
+    zoom: 7,
     center: { lat: 22.1498, lng: -100.9861 },
-    mapTypeId: "satellite", //Cambiar
+    mapTypeId: "roadmap",
   });
   heatmap = new google.maps.visualization.HeatmapLayer({
     data: getPoints(),
