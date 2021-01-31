@@ -6,7 +6,7 @@
         $Name = $_POST['Name'];
         $Email = $_POST['Email'];
         $Comment = $_POST['Comment'];
-        $Link = "https://drive.google.com/file/d/1jCftxXIKP0QFFkejBfFpV1NPo9wTXsLc/view?usp=sharing";
+        $Link = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1200px-Smiley.svg.png";
 
         if(empty($Name) || empty($Email) || empty($Comment) )
         {

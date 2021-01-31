@@ -85,108 +85,109 @@
       <div class="col-md-12 page-block">
         <h1>General information about</h1>
         <h3>For the next questions try to answer honestly and with the most suitable opcions according to your actual state. This information will help us to give you the best recomendations</h3>
-        <form action="results" method="POST"> <!--cambiar-->
+        <form action="submit" method="POST"> <!--cambiar-->
+          <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
           <h5>Question 1</h5>
-          <input type="checkbox" id="respuesta11" name="respuesta11" value="r11">
+          <input type="checkbox" id="respuesta11" name="respuesta11" value="1">
           <label for="respuesta11"> r1</label><br>
-          <input type="checkbox" id="respuesta12" name="respuesta12" value="r12">
+          <input type="checkbox" id="respuesta12" name="respuesta12" value="2">
           <label for="respuesta12"> r2</label><br>
-          <input type="checkbox" id="respuesta13" name="respuesta13" value="r13">
+          <input type="checkbox" id="respuesta13" name="respuesta13" value="3">
           <label for="respuesta13"> r3</label><br>
-          <input type="checkbox" id="respuesta14" name="respuesta14" value="r14">
+          <input type="checkbox" id="respuesta14" name="respuesta14" value="4">
           <label for="respuesta14"> r4</label><br>
 
           <h5>Question 2</h5>
-          <input type="radio" id="respuesta21" name="pregunta2" value="respuesta21">
+          <input type="radio" id="respuesta21" name="pregunta2" value="1">
           <label for="respuesta21">r1</label><br>
-          <input type="radio" id="respuesta22" name="pregunta2" value="respuesta22">
+          <input type="radio" id="respuesta22" name="pregunta2" value="2">
           <label for="respuesta22">r2</label><br>
-          <input type="radio" id="respuesta23" name="pregunta2" value="respuesta23">
+          <input type="radio" id="respuesta23" name="pregunta2" value="3">
           <label for="respuesta23">r3</label><br>
-          <input type="radio" id="respuesta24" name="pregunta2" value="respuesta24">
+          <input type="radio" id="respuesta24" name="pregunta2" value="4">
           <label for="respuesta24">r4</label><br>
 
           <h5>Question 3</h5>
-          <input type="checkbox" id="respuesta31" name="respuesta31" value="r31">
+          <input type="checkbox" id="respuesta31" name="respuesta31" value="1">
           <label for="respuesta31"> r1</label><br>
-          <input type="checkbox" id="respuesta32" name="respuesta32" value="r32">
+          <input type="checkbox" id="respuesta32" name="respuesta32" value="2">
           <label for="respuesta32"> r2</label><br>
-          <input type="checkbox" id="respuesta33" name="respuesta33" value="r33">
+          <input type="checkbox" id="respuesta33" name="respuesta33" value="3">
           <label for="respuesta33"> r3</label><br>
-          <input type="checkbox" id="respuesta34" name="respuesta34" value="r34">
+          <input type="checkbox" id="respuesta34" name="respuesta34" value="4">
           <label for="respuesta34"> r4</label><br>
 
           <h5>Question 4</h5>
-          <input type="radio" id="respuesta41" name="pregunta4" value="respuesta41">
+          <input type="radio" id="respuesta41" name="pregunta4" value="1">
           <label for="respuesta41">r1</label><br>
-          <input type="radio" id="respuesta42" name="pregunta4" value="respuesta42">
+          <input type="radio" id="respuesta42" name="pregunta4" value="2">
           <label for="respuesta42">r2</label><br>
-          <input type="radio" id="respuesta43" name="pregunta4" value="respuesta43">
+          <input type="radio" id="respuesta43" name="pregunta4" value="3">
           <label for="respuesta43">r3</label><br>
-          <input type="radio" id="respuesta44" name="pregunta4" value="respuesta44">
+          <input type="radio" id="respuesta44" name="pregunta4" value="4">
           <label for="respuesta44">r4</label><br>
 
           <h5>Question 5</h5>
-          <input type="checkbox" id="respuesta51" name="respuesta51" value="r51">
+          <input type="checkbox" id="respuesta51" name="respuesta51" value="1">
           <label for="respuesta51"> r1</label><br>
-          <input type="checkbox" id="respuesta52" name="respuesta52" value="r52">
+          <input type="checkbox" id="respuesta52" name="respuesta52" value="2">
           <label for="respuesta52"> r2</label><br>
-          <input type="checkbox" id="respuesta53" name="respuesta53" value="r53">
+          <input type="checkbox" id="respuesta53" name="respuesta53" value="3">
           <label for="respuesta53"> r3</label><br>
-          <input type="checkbox" id="respuesta54" name="respuesta54" value="r54">
+          <input type="checkbox" id="respuesta54" name="respuesta54" value="4">
           <label for="respuesta54"> r4</label><br>
 
           <h5>Question 6</h5>
-          <input type="radio" id="respuesta61" name="pregunta6" value="respuesta61">
+          <input type="radio" id="respuesta61" name="pregunta6" value="1">
           <label for="respuesta61">r1</label><br>
-          <input type="radio" id="respuesta62" name="pregunta6" value="respuesta62">
+          <input type="radio" id="respuesta62" name="pregunta6" value="2">
           <label for="respuesta62">r2</label><br>
-          <input type="radio" id="respuesta63" name="pregunta6" value="respuesta63">
+          <input type="radio" id="respuesta63" name="pregunta6" value="3">
           <label for="respuesta63">r3</label><br>
-          <input type="radio" id="respuesta64" name="pregunta6" value="respuesta64">
+          <input type="radio" id="respuesta64" name="pregunta6" value="4">
           <label for="respuesta64">r4</label><br>
 
           <h5>Question 7</h5>
-          <input type="checkbox" id="respuesta71" name="respuesta71" value="r71">
+          <input type="checkbox" id="respuesta71" name="respuesta71" value="1">
           <label for="respuesta71"> r1</label><br>
-          <input type="checkbox" id="respuesta72" name="respuesta72" value="r72">
+          <input type="checkbox" id="respuesta72" name="respuesta72" value="2">
           <label for="respuesta72"> r2</label><br>
-          <input type="checkbox" id="respuesta73" name="respuesta73" value="r73">
+          <input type="checkbox" id="respuesta73" name="respuesta73" value="3">
           <label for="respuesta73"> r3</label><br>
-          <input type="checkbox" id="respuesta74" name="respuesta74" value="r74">
+          <input type="checkbox" id="respuesta74" name="respuesta74" value="4">
           <label for="respuesta74"> r4</label><br>
 
           <h5>Question 8</h5>
-          <input type="radio" id="respuesta81" name="pregunta8" value="respuesta81">
+          <input type="radio" id="respuesta81" name="pregunta8" value="1">
           <label for="respuesta81">r1</label><br>
-          <input type="radio" id="respuesta82" name="pregunta8" value="respuesta82">
+          <input type="radio" id="respuesta82" name="pregunta8" value="2">
           <label for="respuesta82">r2</label><br>
-          <input type="radio" id="respuesta83" name="pregunta8" value="respuesta83">
+          <input type="radio" id="respuesta83" name="pregunta8" value="3">
           <label for="respuesta83">r3</label><br>
-          <input type="radio" id="respuesta84" name="pregunta8" value="respuesta84">
+          <input type="radio" id="respuesta84" name="pregunta8" value="4">
           <label for="respuesta84">r4</label><br>
 
           <h5>Question 9</h5>
-          <input type="checkbox" id="respuesta91" name="respuesta91" value="r91">
+          <input type="checkbox" id="respuesta91" name="respuesta91" value="1">
           <label for="respuesta91"> r1</label><br>
-          <input type="checkbox" id="respuesta92" name="respuesta92" value="r92">
+          <input type="checkbox" id="respuesta92" name="respuesta92" value="2">
           <label for="respuesta92"> r2</label><br>
-          <input type="checkbox" id="respuesta93" name="respuesta93" value="r93">
+          <input type="checkbox" id="respuesta93" name="respuesta93" value="3">
           <label for="respuesta93"> r3</label><br>
-          <input type="checkbox" id="respuesta94" name="respuesta94" value="r94">
+          <input type="checkbox" id="respuesta94" name="respuesta94" value="4">
           <label for="respuesta94"> r4</label><br>
 
           <h5>Question 10</h5>
-          <input type="radio" id="respuesta101" name="pregunta10" value="respuesta101">
+          <input type="radio" id="respuesta101" name="pregunta10" value="1">
           <label for="respuesta101">r1</label><br>
-          <input type="radio" id="respuesta102" name="pregunta10" value="respuesta102">
+          <input type="radio" id="respuesta102" name="pregunta10" value="2">
           <label for="respuesta102">r2</label><br>
-          <input type="radio" id="respuesta103" name="pregunta10" value="respuesta103">
+          <input type="radio" id="respuesta103" name="pregunta10" value="3">
           <label for="respuesta103">r3</label><br>
-          <input type="radio" id="respuesta104" name="pregunta10" value="respuesta104">
+          <input type="radio" id="respuesta104" name="pregunta10" value="4">
           <label for="respuesta104">r4</label><br><br>
           <p>Thanks for answering</p>
-          <a href="/results"><button type="submit" class="btn btn-primary">Submit</a>
+          <button type="submit" class="btn btn-primary">Submit
         </form>
       </div>
       <!--blog posts container-->
