@@ -1,0 +1,66 @@
+body {
+    background-color: #8cc6ec;
+  }
+  
+  .handwritten
+  {
+    font-family: 'Dancing Script';
+  }
+  
+  .inner-border
+  {
+    border: 6px solid gold;
+    padding:40px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  h1 {
+    text-transform: capitalize;
+  }
+  
+  h2{
+    font-family:'Almendra SC';
+    font-size:50px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+  }
+  
+  h3{
+    font-family:'Almendra SC';
+    font-size:30px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+  }
+  
+  .meltdown{
+  
+    
+  }
+  
+  .certificate
+  {
+    background-color:#ddd;
+    margin-top:20px;
+    padding:30px;
+    border:3px solid black;
+      background-image:url('https://craiglager.co.uk/wp-content/uploads/2016/06/C1ROVk6.png');
+    background-size:500px;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  
+  .name-wrapper
+  {
+    border-bottom:4px solid #333;
+    margin:20px;
+  }
+  
+  .name-wrapper h1
+  {
+    font-size:80px
+  }
