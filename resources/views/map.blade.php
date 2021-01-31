@@ -34,42 +34,25 @@
         <![endif]-->
     </head>
     <body class="page">
-    
-    <!-- Navigation
-        ==========================================-->
+     <!-- Navigation
+    ==========================================-->
     <nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container"> 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="/home"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
-        
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-          
-          <!--nav icon--> 
-          <a id="nav-icon"> <span></span> <span></span> <span></span> </a> 
-          <!--nav icon end-->
-          
-          <ul id="nav-top" class="nav navbar-nav navbar-right">
-            <li><a href="/home" class="page-scroll">Home</a></li>
-           <li><a href="/test" class="page-scroll">Test</a></li>
-           <li><a href="/map" class="page-scroll">Map</a></li>
-           <li><a href="contact.html" class="page-scroll">Recommendations</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse --> 
+          <a class="navbar-brand" href="/home"><img style="width:15%;height:auto;" src="img/homepagelogo.png" class="img-responsive"><span>CTEST</span></a> </div>
       </div>
       <!-- /.container-fluid --> 
     </nav>
-    
+
     <!-- banner Page
         ==========================================-->
     <div id="page-banner" style="background-image: url(img/M2.png);">
       <div class="content  wow fdeInUp">
         <div class="container ">
           <h1>Heat Map </h1>
-          <h3 style="color:white">This heat map helps us to scheme the geological distribution of the people who have taken our test, as well as their results. As you can see, people are getting more aware of the current situation of COVID-19 and how to take action against the spread of this disease.</h3>
+          <h3 style="color:white">This heat map helps us to scheme the geographical distribution of the people who have taken our test, as well as their results. As you can see, people are getting more aware of the current situation of COVID-19 and how to take action against the spread of this disease.</h3>
         </div>
       </div>
     </div>
@@ -132,7 +115,7 @@
     </script>
     <script src=<?php echo asset('js/map.js')?>></script>
     
-  </head>
+  </body>
   <body>
       <div id="map"></div> 
   </body>
