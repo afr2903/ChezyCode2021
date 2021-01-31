@@ -118,7 +118,7 @@
         <li><a href="https://www.youtube.com/user/LamBot3478"><i class="fa fa-youtube"></i></a></li>
           <li><a href="https://www.facebook.com/TeamLamBot3478"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://www.instagram.com/lambot3478/"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://github.com/davidmtzt/FRC-LAMBOT3478"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://github.com/FRCTeam3478/"><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
       <!--/powered by--> 

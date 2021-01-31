@@ -16,6 +16,8 @@ use App\Http\Controllers\Control;
 
 Route::get('/', [Control::class, 'home'] );
 
+Route::get('home', [Control::class, 'home'] );
+
 Route::get('test', [Control::class, 'test'] );
 
 Route::post('submit', [Control::class, 'submit'] );

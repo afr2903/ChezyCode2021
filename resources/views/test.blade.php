@@ -137,7 +137,7 @@
           <input type="radio" id="respuesta52" name="pregunta5" value="0">
           <label for="respuesta52">No</label><br>
 
-          <h5>Question 6: In the last two weeks, which of the following symptoms have you had?</h5>
+          <h5>In the last two weeks, which of the following symptoms have you had?</h5>
           <input type="checkbox" id="respuesta61" name="respuesta61" value="5">
           <label for="respuesta61">Fever or chills</label><br>
           <input type="checkbox" id="respuesta62" name="respuesta62" value="5">
@@ -192,7 +192,7 @@
         <li><a href="https://www.youtube.com/user/LamBot3478"><i class="fa fa-youtube"></i></a></li>
           <li><a href="https://www.facebook.com/TeamLamBot3478"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://www.instagram.com/lambot3478/"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://github.com/davidmtzt/FRC-LAMBOT3478"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://github.com/FRCTeam3478/"><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
       <!--/powered by--> 
