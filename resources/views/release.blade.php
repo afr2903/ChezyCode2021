@@ -87,20 +87,23 @@ new WOW().init();
 
     <div class="certificate col-xs-12">
       <div class="inner-border">
-        <h2>Certificate of achievement</h2>
-        <h3>hereby granted to</h3>
+        <h2>Certificate of commitment</h2>
+        <h3>is to certify</h3>
         <div class="row">
           <div class="col-xs-6 col-xs-push-3 text-center name-wrapper">
-            <h1 class="handwritten"><?php echo $_POST['name'];?></h1>
+            <h1 class="handwritten">{{Session::get('name')}}</h1>
           </div>
         </div>
-        <h3>for</h3>
-        <h2 class="meltdown">spectacular meltdown</h2>
-        
-        <div class="row">
-          <div class="col-xs-12 text-center date">
-            awarded<br/><span class="handwritten">{{date}}</span>
+        <h3>is aware of</h3> 
+        <h3 class="meltdown">the current health situation and commited to take steps to prevent the spread of COVID - 19</h3> 
+        <h3>Lambot 3478 | FRC team 2021</h3>
+        <h5 class="col-xs-12 text-center date">Footnote: this certificate has neither legal nor medical value</h5>
+        <img src = "img/LamBot.png" height = 50% width = 50%> 
+        <div class="row"> 
+          <div class="col-xs-12 text-center date"> 
+            awarded<br/><span class="handwritten"><?php echo date("Y/m/d"); ?></span>
           </div>
+          
         </div>
       </div>
     </div>
