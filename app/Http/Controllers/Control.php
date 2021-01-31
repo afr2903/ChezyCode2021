@@ -16,9 +16,13 @@ class Control extends Controller{
         return view('test');
     }
 
+    public function xd(){
+        return view('xd');
+    }
 
     public function submit(){
-        $sum = 0;
+        echo "Latitude: ".$_POST['latitude']." Longitude: ".$_POST['longitude'];
+        /*$sum = 0;
  
         $flag1 = 0;
         for ($j = 1; $j<=12; $j++){
@@ -50,7 +54,7 @@ class Control extends Controller{
         else if($sum<=100) $message = "Vete a tu casa";
         else $message = "Vete alv";
 
-        return redirect('results')->with('message', $message);
+        return redirect('results')->with('message', $message);*/
     }
 
     public function blog(){
