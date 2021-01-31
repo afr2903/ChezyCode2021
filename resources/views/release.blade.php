@@ -47,7 +47,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="/home"><img src="img/logo-top.png" class="img-responsive"><span>CTEST</span></a> </div>
+      <a class="navbar-brand" href="/"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -99,8 +99,10 @@ new WOW().init();
         <h3>is aware of</h3> 
         <h3 class="meltdown">the current health situation and commited to take steps to prevent the spread of COVID-19</h3> 
         <h3>Lambot 3478 | FRC Team 2021</h3>
+        <center>
+        <img src = "img/LamBot.png">
+        </center>
         <h5 class="col-xs-12 text-center date">Footnote: this certificate has neither legal nor medical value</h5>
-        <img src = "img/LamBot.png" > 
         <div class="row"> 
           <div class="col-xs-12 text-center date"> 
             awarded<br/><span class="handwritten"><?php echo date("Y/m/d"); ?></span>
