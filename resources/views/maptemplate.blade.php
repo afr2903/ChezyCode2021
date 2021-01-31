@@ -42,7 +42,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="/home"><img src="img/logo-top.png" class="img-responsive"><span>CTEST</span></a> </div>
+          <a class="navbar-brand" href="/"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -52,10 +52,9 @@
           <!--nav icon end-->
           
           <ul id="nav-top" class="nav navbar-nav navbar-right">
-            <li><a href="/home" class="page-scroll">Home</a></li>
+            <li><a href="/" class="page-scroll">Home</a></li>
            <li><a href="/test" class="page-scroll">Test</a></li>
            <li><a href="/map" class="page-scroll">Map</a></li>
-           <li><a href="contact.html" class="page-scroll">Recommendations</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> 
@@ -72,7 +71,7 @@
         </div>
       </div>
     </div>
-    <title>Heatmaps</title>
+    <title>Heatmap</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGUqu0xbN4fcwCd09XqLjIwEOhRMjCYgE&callback=initMap&libraries=visualization&v=weekly"

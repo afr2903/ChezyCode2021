@@ -27,3 +27,8 @@ Route::get('recomendations', [Control::class, 'blog'] );
 Route::get('results', [Control::class, 'results'] );
 
 Route::get('certificate', [Control::class, 'certificate'] );
+
+Route::get('release', [Control::class, 'release']);
+
+Route::post('sign', [Control::class, 'sign']);
+

@@ -45,7 +45,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="/home"><img src="img/logo-top.png" class="img-responsive"><span>CTEST</span></a> </div>
+      <a class="navbar-brand" href="/"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -58,7 +58,6 @@
         <li><a href="/home" class="page-scroll">Home</a></li>
         <li><a href="/test" class="page-scroll">Test</a></li>
         <li><a href="/map" class="page-scroll">Map</a></li>
-        <li><a href="contact.html" class="page-scroll">Recommendations</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -71,7 +70,7 @@
 <div id="page-banner" style="background-image: url(img/photo-typo.jpg);">
   <div class="content  wow fdeInUp">
     <div class="container ">
-      <h1>Let us know how can we help you </h1>
+      <h1>Take the test</h1>
     </div>
   </div>
 </div>
@@ -83,8 +82,8 @@
     <div class="row wow fdeInUp"> 
       <!--blog posts container-->
       <div class="col-md-12 page-block">
-        <h1>General information about</h1>
-        <h3>For the next questions try to answer HONESTY and with the most suitable opcions according to your actual state. This information will help us to give you the best Recommendations</h3>
+        <h1>General information</h1>
+        <h3>Try to answer the following questions HONESTLY and with the most suitable options according to your current state. This information will help us give you the best advice.</h3>
         <form action="submit" method="post"> <!--cambiar-->
           <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
           <h5>How old are you? </h5>
@@ -145,7 +144,7 @@
           <input type="checkbox" id="respuesta611" name="respuesta611" value="2">
           <label for="respuesta611">Diarrhea</label><br>
           <input type="checkbox" id="respuesta612" name="respuesta612" value="0">
-          <label for="respuesta612">None of the above</label><br>
+          <label for="respuesta612">None of the above</label><br><br>
           <p>Thank you for your answers!</p><br><br> 
           <button type="submit" class="btn btn-primary">Submit
         </form>
@@ -160,21 +159,9 @@
     <div class="row wow fdeInUp">
       <div class="col-md-4 col-sm-4 col-xs-12"> 
         <!--copyright-->
-        <p class="copyright">© 2018. All rights reserved</p>
+        <!--<p class="copyright">© 2018. All rights reserved</p>-->
         <!--/copyright--> 
       </div>
-      <!--bottom nav-->
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <nav class="bottom-nav">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--/bottom nav--> 
       
       <!--powered by-->
       <div class="col-md-4 col-sm-4 col-xs-12">

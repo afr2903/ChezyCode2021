@@ -45,7 +45,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="/home"><img src="img/logo-top.png" class="img-responsive"><span>CTEST</span></a> </div>
+      <a class="navbar-brand" href="/"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -55,10 +55,9 @@
       <!--nav icon end-->
       
       <ul id="nav-top" class="nav navbar-nav navbar-right">
-        <li><a href="/home" class="page-scroll">Home</a></li>
+        <li><a href="/" class="page-scroll">Home</a></li>
         <li><a href="/test" class="page-scroll">Test</a></li>
         <li><a href="/map" class="page-scroll">Map</a></li>
-        <li><a href="contact.html" class="page-scroll">Recommendations</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -97,9 +96,8 @@
       <!--blog posts container-->
       <div class="col-md-12 page-block">
         <h1>What should I do now?</h1>
-        <h2>Get your certificate!</h2><br>
-        <p>Now that you finished the test, it's time to get your certificate of completion!To do so, just click on the following link:</p>
-        <a href="/certificate">Go to certificate</a>
+        <p>Now that you finished the test, it's time to get your <a href="/certificate">certificate</a> of completion!</p>
+        <p>Furthermore, you can take a look at our <a href="/map">heatmap</a> and look for risk zones nearby.</p>
       </div>
       <!--blog posts container-->
       <div class="clearfix"></div>
@@ -111,22 +109,9 @@
     <div class="row wow fdeInUp">
       <div class="col-md-4 col-sm-4 col-xs-12"> 
         <!--copyright-->
-        <p class="copyright">© 2018. All rights reserved</p>
+        <!--<p class="copyright">© 2018. All rights reserved</p>-->
         <!--/copyright--> 
       </div>
-      <!--bottom nav-->
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <nav class="bottom-nav">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--/bottom nav--> 
-      
       <!--powered by-->
       <div class="col-md-4 col-sm-4 col-xs-12">
         <ul class="social-link">

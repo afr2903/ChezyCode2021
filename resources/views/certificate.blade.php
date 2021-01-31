@@ -45,7 +45,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="/home"><img src="img/logo-top.png" class="img-responsive"><span>CTEST</span></a> </div>
+      <a class="navbar-brand" href="/"><img src="img/logoLamBot.png" class="img-responsive"><span>CTEST</span></a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -55,10 +55,9 @@
       <!--nav icon end-->
       
       <ul id="nav-top" class="nav navbar-nav navbar-right">
-        <li><a href="/home" class="page-scroll">Home</a></li>
+        <li><a href="/" class="page-scroll">Home</a></li>
         <li><a href="/test" class="page-scroll">Test</a></li>
         <li><a href="/map" class="page-scroll">Map</a></li>
-        <li><a href="contact.html" class="page-scroll">Recommendations</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -68,10 +67,10 @@
 
 <!-- banner Page
     ==========================================-->
-<div id="page-banner" style="background-image: url(img/M1.png);">
+<div id="page-banner" style="background-image: url(img/codo.jpg);">
   <div class="content  wow fdeInUp">
     <div class="container ">
-      <h1>Let's get a medal</h1>
+      <h1>Let's get a certificate!</h1>
     </div>
   </div>
 </div>
@@ -84,28 +83,31 @@
       <!--blog posts container-->
       <div class="col-md-offset-3 col-md-6 page-block">
         <h1>Commit yourself</h1>
-            <form method="post" action="form_1.php" name="Certificate" style="padding-bottom:80px">
+        <h2>By filling in the next blank, you are committing yourself to taking action against the spread of COVID-19 by staying home and taking the necessary measures:</h2>
+            <form method="post" action="sign" name="Certificate" style="padding-bottom:80px">
+            <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
                 <div class="form-group">                    
                     <label for="exampleInputName">Name</label>
-                    <input id="Name" name="Name" type="text" class="form-control" placeholder="Name">
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Name">
                     <!--<input type="email" class="form-control" id="exampleInputName" placeholder="Name">-->
-                </div>
+                <!--</div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input id="Email" name="Email" type="text" class="form-control" placeholder="Email">
-                    <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">-->
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputMessage">Comentaries about</label>
-                    <input id="Comment" name="Comment" type="text" class="form-control" placeholder="Comment">
-                    <!--<textarea placeholder="Tell us something"></textarea>-->
-                </div>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>-->
+                <!--<div class="form-group">
+                    <label for="exampleInputMessage">Comments</label>
+                    <input id="Comment" name="Comment" type="text" class="form-control" placeholder="Comment">-->
+                    <!--<textarea placeholder="Tell us something"></textarea>
+                </div>-->
                 <!--<div class="checkbox checkbox-success">
                     <input type="checkbox" value="yes" checked="">
                     <label> Send me a copy. </label>
                 </div>-->
+                <p>Note: your data will not be stored</p>
                 <button type="submit" class="btn btn-primary">Get the certificate</button>
-        </form>
+             </form>
 
       <!--blog posts container-->
    
@@ -113,35 +115,23 @@
   </div>
  </div>
 </div>
-   <div class="clearfix"></div>
+<div class="clearfix"></div> 
 <footer id="bottom-footer">
   <div class="container">
     <div class="row wow fdeInUp">
       <div class="col-md-4 col-sm-4 col-xs-12"> 
         <!--copyright-->
-        <p class="copyright">© 2018. All rights reserved</p>
+        <!--<p class="copyright">© 2018. All rights reserved</p>-->
         <!--/copyright--> 
       </div>
-      <!--bottom nav-->
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <nav class="bottom-nav">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--/bottom nav--> 
       
       <!--powered by-->
       <div class="col-md-4 col-sm-4 col-xs-12">
         <ul class="social-link">
-          <li><a href="https://www.youtube.com/user/LamBot3478"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.youtube.com/user/LamBot3478"><i class="fa fa-youtube"></i></a></li>
           <li><a href="https://www.facebook.com/TeamLamBot3478"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://www.instagram.com/lambot3478/"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://github.com/FRCTeam3478"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://github.com/davidmtzt/FRC-LAMBOT3478"><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
       <!--/powered by--> 
@@ -158,6 +148,7 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script src="js/owl.carousel.js"></script> 
 <script src="js/jquery.waypoints.min.js"></script> 
+<!-- Javascripts
 <!-- Javascripts
     ================================================== --> 
 <script type="text/javascript" src="js/main.js"></script> 

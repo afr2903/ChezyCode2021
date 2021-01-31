@@ -35,6 +35,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<type="text/css" media="print" />   
 </head>
 <body class="page">
 
@@ -87,16 +89,16 @@ new WOW().init();
 
     <div class="certificate col-xs-12">
       <div class="inner-border">
-        <h2>Certificate of commitment</h2>
-        <h3>is to certify</h3>
+        <h2>Commitment Certificate</h2>
+        <h3>It is to certify that</h3>
         <div class="row">
           <div class="col-xs-6 col-xs-push-3 text-center name-wrapper">
             <h1 class="handwritten">{{Session::get('name')}}</h1>
           </div>
         </div>
         <h3>is aware of</h3> 
-        <h3 class="meltdown">the current health situation and commited to take steps to prevent the spread of COVID - 19</h3> 
-        <h3>Lambot 3478 | FRC team 2021</h3>
+        <h3 class="meltdown">the current health situation and commited to take steps to prevent the spread of COVID-19</h3> 
+        <h3>Lambot 3478 | FRC Team 2021</h3>
         <h5 class="col-xs-12 text-center date">Footnote: this certificate has neither legal nor medical value</h5>
         <img src = "img/LamBot.png" height = 50% width = 50%> 
         <div class="row"> 
@@ -111,6 +113,7 @@ new WOW().init();
 
 </div>
 </div>
-
+<button onclick="window.location.href='/'" type="submit" class="btn btn-primary">Return Home</button>
+<button onclick="window.print();"target="_blank" type="submit" class="btn btn-primary">Print</button>
 </body>
 </html>

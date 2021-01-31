@@ -46,9 +46,9 @@ class Control extends Controller{
             'status' => $status
         ]);
 
-        if($sum<=50) $message = "Vas bien";
-        else if($sum<=100) $message = "Vete a tu casa";
-        else $message = "Vete alv";
+        if($sum<=50) $message = "You have nothing to worry about! It is unlikely that you contracted the virus. However, we are still going through a global pandemic and you should keep following the appropriate hygiene measures, such as using face masks, washing your hands, and practicing social distancing.";
+        else if($sum<=100) $message = "There is a chance that you are not properly protecting yourself from COVID-19. You should consider strengthening your hygiene measures, such as using face masks and washing your hands more regularly, as well as practicing social distancing. It is also advisable that you stay at home and avoid unnecessary social contact.";
+        else $message = "You are at a high risk of being infected with COVID-19. It is highly advisable that you stay at home and get in contact with a doctor as soon as possible for the proper follow-up to your case; you might be asked to get tested for the disease.";
 
         return redirect('results')->with('message', $message);
     }
@@ -63,6 +63,24 @@ class Control extends Controller{
 
     public function certificate(){
         return view('certificate');
+    }
+
+    public function release(){
+        return view('release');
+    }
+
+    public function sign(){
+    
+        if($_POST['name'] == NULL)
+        {
+    
+            echo '<script> alert("Please answer all the questions"); </script>';
+            echo '<script> window.history.back();</script>';
+    
+        }
+    
+        $name = $_POST['name'];
+        return redirect('release')->with('name', $name);
     }
 
     public function map(){
